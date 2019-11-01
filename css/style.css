@@ -135,7 +135,7 @@ body:after {
 
 @media (min-width: 768px) {
     .site-section {
-        padding: 4em 0;
+        padding: 3em 0;
     }
 }
 
@@ -839,8 +839,8 @@ body:after {
 }
 
 .site-blocks-cover, .site-blocks-cover > .container, .site-blocks-cover > .container > .row {
-    min-height: 600px;
-    height: 40vh;
+    min-height: 400px;
+    height: 20vh;
 }
 
 .site-blocks-cover .text-intro {
@@ -858,7 +858,7 @@ body:after {
     right: 15%;
     bottom: 0;
     z-index: 1;
-    max-width: 450px;
+    max-width: 300px;
 }
 
 @media (max-width: 991.98px) {

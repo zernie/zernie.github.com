@@ -28,8 +28,8 @@
 	}
 	
 	&, & > .container , & > .container > .row {
-		min-height: 600px;
-		height: 100vh;
+		min-height: 400px;
+		height: 20vh;
 	}
 	
 	.text-intro {
@@ -45,7 +45,7 @@
 		right: -5%;
 		bottom: 0;
 		z-index: 1;
-		max-width: 950px;
+		max-width: 300px;
 		@include media-breakpoint-down(md) {
 			right: -25%;
 		}
