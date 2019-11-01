@@ -268,7 +268,7 @@ jQuery(document).ready(function($) {
 	  });
   }
 
-  siteIstotope();
+  //siteIstotope();
 
 
   $('.fancybox').on('click', function() {
