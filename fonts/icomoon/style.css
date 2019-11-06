@@ -4918,3 +4918,8 @@
 .icon-zoom_out_map:before {
   content: "\e56b";
 }
+
+#about-section {
+  background-color: #ffe3ce;
+  padding: 0;
+}
