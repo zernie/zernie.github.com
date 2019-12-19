@@ -273,6 +273,8 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
+  $('[data-toggle="tooltip"]').tooltip();
+
   if (navigator.language === 'ru') {
     $("#cv-btn").hide()
   }
