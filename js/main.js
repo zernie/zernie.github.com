@@ -272,4 +272,8 @@ jQuery(document).ready(function ($) {
 
     return false;
   });
+
+  if (navigator.language === 'ru') {
+    $("#cv-btn").hide()
+  }
 });
