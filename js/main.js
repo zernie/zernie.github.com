@@ -275,7 +275,7 @@ jQuery(document).ready(function ($) {
 
   $('[data-toggle="tooltip"]').tooltip();
 
-  if (navigator.language === 'ru') {
-    $("#cv-btn").hide()
-  }
+  //if (navigator.language === 'ru') {
+  //  $("#cv-btn").hide()
+  //}
 });
