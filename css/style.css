@@ -766,7 +766,11 @@ body:after {
 }
 
 .sticky-wrapper .site-navbar .site-menu > li > a {
-    color: rgba(0, 0, 0, 0.7) !important;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sticky-wrapper .site-navbar .site-menu > li > a.disabled {
+    color: rgba(103, 95, 95, 0.7) !important;
 }
 
 .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
