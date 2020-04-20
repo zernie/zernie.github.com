@@ -900,8 +900,8 @@ body:after {
 .service {
     padding: 30px;
     background: #fff;
-    -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.2);
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
@@ -912,7 +912,7 @@ body:after {
 .service:hover {
     -webkit-box-shadow: 0 8px 50px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 50px -5px rgba(0, 0, 0, 0.1);
-    background-color: #746ce6;
+    background-color: #837ce2;
     color: white;
     top: -2px;
 }
