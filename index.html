@@ -100,7 +100,7 @@
                         <div class="col-lg-6">
                             <h1 class="text-black">Hey, I'm Ernie</h1>
                             <!--                            <p class="lead">I'm a Ruby on Rails & React.js developer</p>-->
-                            <p><a href="#portfolio-section" class="btn smoothscroll btn-primary">Portfolio</a></p>
+                            <p><a href="#portfolio-section" class="btn smoothscroll btn-info">Portfolio</a></p>
                         </div>
                     </div>
                 </div>
@@ -136,11 +136,12 @@
 
                 <div class="col-md-6 mb-4">
                     <div class="service d-flex h-100">
-                        <div class="service-number mr-4"><img src="images/skills/react.svg" alt="React.js"/></div>
+                        <div class="service-number mr-4" style="display: flex;">
+                            <img src="images/skills/react.svg" alt="React.js" />
+                            <img src="images/skills/redux.svg" alt="Redux" style="width: 32px; align-self: flex-end;"/>
+                        </div>
                         <div class="service-about">
-                            <h3>React.js</h3>
-                            <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error-->
-                            <!--                                eligendi molestiae eaque quas, ducimus sequi excepturi?</p>-->
+                            <h3>React.js & Redux</h3>
                         </div>
                     </div>
                 </div>
@@ -182,9 +183,9 @@
 
                 <div class="col-md-6 mb-4">
                     <div class="service d-flex h-100">
-                        <div class="service-number mr-4"><img src="images/skills/webpack.svg" alt="Webpack"/></div>
+                        <div class="service-number mr-4"><img src="images/skills/node.svg" alt="Webpack"/></div>
                         <div class="service-about">
-                            <h3>Webpack</h3>
+                            <h3>Node.js</h3>
                             <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error-->
                             <!--                                eligendi molestiae eaque quas, ducimus sequi excepturi?</p>-->
                         </div>
@@ -201,49 +202,44 @@
     <section class="site-section" id="about-section">
         <div class="container mt-4">
             <div class="row">
-                <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <picture>
-                        <source srcset="images/face.webp" type="image/webp">
-                        <source srcset="images/face.png" type="image/png">
-                        <img src="images/face.png" alt="Photo" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-lg-4 order-2 order-lg-1 pt-4">
+<!--                <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">-->
+<!--                    <picture>-->
+<!--                        <source srcset="images/face.webp" type="image/webp">-->
+<!--                        <source srcset="images/face.png" type="image/png">-->
+<!--                        <img src="images/face.png" alt="Photo" class="img-fluid">-->
+<!--                    </picture>-->
+<!--                </div>-->
+                <div class="col-12 col-xl-5 pt-4 offset-xl-3">
                     <h2 class="section-title">About Me</h2>
-                    <p>I'm a Ruby on Rails, Node.js & React.js developer from Russia.</p>
-                    <!--                    <p>I have been working as a remote Ruby on Rails & React.js developer since 2016.</p>-->
-                    <!--                    <p>I have been working as a remote Ruby on Rails & React.js developer since 2016.</p>-->
-                    <br>
+                    <p>I'm a Ruby on Rails, Node.js & React.js developer from Russia with 4 years of experience.</p>
                     <p>You can hire me for long term projects!</p>
                     <p>I'm open for remote contracts and visa sponsorships.</p>
-                    <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a>
-                </div>
-                <div class="col-lg-4 order-3 order-lg-3 pt-4">
-                    <div class="text-center">
-                        <p class="mt-4">Me on social media:</p>
+                    <p class="mr-4">
+                        <a href="#contact-section" class="btn smoothscroll btn-primary mr-4">Contact Me</a>
 
-                        <a href="https://www.linkedin.com/in/zernie/" class="social-circle" target="_blank"
-                           rel="nofollow noopener"><span
-                                class="icon-linkedin" style="color: #2867B2;" data-toggle="tooltip"
-                                title="LinkedIn"></span></a>
+                        <span class="align-middle">
+                            <a href="https://www.linkedin.com/in/zernie/" class="social-circle" target="_blank"
+                               rel="nofollow noopener"><span
+                                    class="icon-linkedin" style="color: #2867B2;" data-toggle="tooltip"
+                                    title="LinkedIn"></span></a>
 
-                        <a href="http://github.com/zernie" class="social-circle" target="_blank" rel="nofollow noopener"
-                           style="color: black" data-toggle="tooltip" title="GitHub"><span
-                                class="icon-github"></span></a>
-                        <br>
+                            <a href="http://github.com/zernie" class="social-circle" target="_blank" rel="nofollow noopener"
+                               style="color: black" data-toggle="tooltip" title="GitHub"><span
+                                    class="icon-github"></span></a>
 
-                        <a href="https://www.facebook.com/zergetaev" class="social-circle" target="_blank"
-                           data-toggle="tooltip" title="Facebook"
-                           rel="nofollow noopener"><span
-                                class="icon-facebook" style="color: #3b5998"></span></a>
-                        <a href="https://vk.com/id37368931"
-                           class="social-circle"
-                           target="_blank"
-                           data-toggle="tooltip"
-                           title="VKontakte"
-                           rel="nofollow noopener"><span
-                                class="icon-vk" style="color: #4680C2"></span></a>
-                    </div>
+                            <a href="https://www.facebook.com/zergetaev" class="social-circle" target="_blank"
+                               data-toggle="tooltip" title="Facebook"
+                               rel="nofollow noopener"><span
+                                    class="icon-facebook" style="color: #3b5998"></span></a>
+                            <a href="https://vk.com/id37368931"
+                               class="social-circle"
+                               target="_blank"
+                               data-toggle="tooltip"
+                               title="VKontakte"
+                               rel="nofollow noopener"><span
+                                    class="icon-vk" style="color: #4680C2"></span></a>
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -258,37 +254,37 @@
             </div>
 
             <div id="posts" class="row">
-                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center">
+                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center" data-toggle="tooltip" title="The world's largest bus tickets marketplace">
                     <a href="https://www.busbud.com/" class="item-wrap" rel="nofollow noopener" target="_blank">
                         <img class="img-fluid" src="images/sites/busbud.webp" alt="Busbud">
                     </a>
                 </div>
 
-                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center">
+                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center"  data-toggle="tooltip" title="Innovational ICO escrow platform">
                     <a href="http://jury.online/" class="item-wrap" rel="nofollow noopener" target="_blank">
                         <img class="img-fluid" src="images/sites/jury.webp" alt="jury.online">
                     </a>
                 </div>
 
-                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center">
-                    <a href="http://vayable.com/" class="item-wrap text-center" rel="nofollow noopener" target="_blank">
+                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center" data-toggle="tooltip" title="An online marketplace for travel experiences">
+                    <a href="http://vayable.com/" class="item-wrap text-center" rel="nofollow noopener"target="_blank" >
                         <img class="img-fluid" src="images/sites/vayable.webp" alt="Vayable">
                     </a>
                 </div>
 
-                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center">
+                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center" data-toggle="tooltip" title="Telegram ad marketplace">
                     <a href="https://buzz.im/" class="item-wrap" rel="nofollow noopener" target="_blank">
                         <img class="img-fluid" src="images/sites/buzzim.webp" alt="Buzz im">
                     </a>
                 </div>
 
-                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center">
-                    <a href="https://leadmob.io/" class="item-wrap" rel="nofollow noopener" target="_blank">
+                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center" data-toggle="tooltip" title="One-of-a-kind performance marketing exchange">
+                    <a href="https://leadmob.io/" class="item-wrap" rel="nofollow noopener" target="_blank" >
                         <img class="img-fluid" src="images/sites/leadmob.webp" alt="Leadmob">
                     </a>
                 </div>
 
-                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center">
+                <div class="item col-6 col-sm-6 col-md-6 col-xl-4 mb-4 text-center"  data-toggle="tooltip" title="Large concert agency.">
                     <a href="https://spika.org/" class="item-wrap" rel="nofollow noopener" target="_blank">
                         <img class="img-fluid" src="images/sites/spika.webp" alt="Spika concert agency">
                     </a>

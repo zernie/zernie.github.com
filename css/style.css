@@ -135,7 +135,7 @@ body:after {
 
 @media (min-width: 768px) {
     .site-section {
-        padding: 3em 0;
+        padding: 2em 0;
     }
 }
 
@@ -869,7 +869,7 @@ body:after {
 
 .section-title {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .section-title:after {
