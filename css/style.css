@@ -793,11 +793,11 @@ body:after {
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
-    color: #000 !important;
+    color: #000;
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-    color: #207561 !important;
+    color: #09a123 !important
 }
 
 .sticky-wrapper .shrink {
