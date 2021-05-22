@@ -130,12 +130,12 @@ body:after {
 }
 
 .site-section {
-    padding: 2.5em 0;
+    padding: 2em 0;
 }
 
 @media (min-width: 768px) {
     .site-section {
-        padding: 2em 0;
+        padding: 1.5em 0;
     }
 }
 
@@ -843,7 +843,7 @@ body:after {
 }
 
 .site-blocks-cover, .site-blocks-cover > .container, .site-blocks-cover > .container > .row {
-    min-height: 400px;
+    min-height: 440px;
     height: 20vh;
 }
 
@@ -867,7 +867,8 @@ body:after {
 
 @media (max-width: 991.98px) {
     .site-blocks-cover .img-face {
-        right: -25%;
+        display: none;
+        /*right: -25%;*/
     }
 }
 
@@ -915,7 +916,7 @@ body:after {
 
 @media (max-width: 761px) {
     .service {
-        padding: 15px;
+        padding: 8px;
     }
 }
 
@@ -927,18 +928,24 @@ body:after {
     top: -2px;
 }
 
-.service:hover h3 {
+.service:hover > h4 {
     color: white;
 }
 
 .service .service-number {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 60px;
-    flex: 0 0 60px;
+    flex: 0 0 20px;
 }
 
 .service .service-number > img {
     width: 64px;
+}
+
+@media (max-width: 761px) {
+    .service .service-number > img {
+        width: 32px;
+    }
 }
 
 .service .service-number span {
@@ -957,13 +964,14 @@ body:after {
     margin-bottom: 0;
 }
 
-.service .service-about h3 {
+.service .service-about h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 @media (max-width: 996px) {
-    .service .service-about h3 {
+    .service .service-about h4 {
         font-size: 1rem;
     }
 }
@@ -1238,4 +1246,9 @@ body:after {
 
 .footer a:hover {
     color: #000;
+}
+
+.rounded-img > img {
+    width: 64px;
+    border-radius: 50%;
 }
