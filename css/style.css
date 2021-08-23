@@ -8,6 +8,9 @@ body {
     color: #333;
     font-weight: 400;
     font-size: 1rem;
+    background: #f9f9ff;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 ::-moz-selection {
@@ -32,7 +35,7 @@ a:hover {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-    font-family: "Arbutus Slab", serif;
+    font-family: "Open Sans", serif;
     color: #000;
 }
 
@@ -90,9 +93,15 @@ body:after {
 }
 
 .btn.btn-primary {
-    background: #207561;
-    border-color: #207561;
+    background: #1ac969;
+    border: none;
     color: #fff;
+}
+
+.btn-info {
+    background: #9c00f3c7;
+    color: white;
+    border: none;
 }
 
 .btn.btn-primary:hover {
@@ -117,7 +126,7 @@ body:after {
 .form-control {
     height: 43px;
     border-radius: 30px;
-    font-family: "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .form-control:active, .form-control:focus {
@@ -131,6 +140,10 @@ body:after {
 
 .site-section {
     padding: 2em 0;
+    /*background: #FFF;*/
+    box-shadow: 0 5px 20px 0 rgba(69 67 96, 0.5);
+    /*border-radius: 20px;*/
+    /*margin: 0 10px;*/
 }
 
 @media (min-width: 768px) {
@@ -405,7 +418,7 @@ body:after {
     margin: 0;
     padding: 0;
     margin-bottom: 0;
-    font-family: "Arbutus Slab", serif;
+    font-family: "Open Sans", serif;
 }
 
 .site-navbar .site-navigation .site-menu a {
@@ -749,6 +762,7 @@ body:after {
     position: absolute;
     z-index: 100;
     width: 100%;
+    max-width: 1024px;
 }
 
 .sticky-wrapper .site-navbar {
@@ -816,7 +830,7 @@ body:after {
 }
 
 .site-blocks-cover .lead {
-    font-family: "Arbutus Slab", serif;
+    font-family: "Open Sans", serif;
     font-size: 1.3rem;
     color: #1a1a1a;
 }
@@ -854,7 +868,7 @@ body:after {
 
 .site-blocks-cover h1 {
     font-size: 3rem;
-    font-family: "Arbutus Slab", serif;
+    font-family: "Open Sans", serif;
 }
 
 .site-blocks-cover .img-face {
@@ -904,14 +918,20 @@ body:after {
 
 .service {
     padding: 30px;
-    background: #fff;
-    -webkit-box-shadow: 0 1px 3px 0px rgba(0,0,0,0.2);
-    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.2);
+    background: rgba(15, 108, 255, 0.5);
+    -webkit-box-shadow: 0 5px 5px 0px rgba(0,0,100,0.15);
+    box-shadow: 0 5px 5px 0px rgba(0,0, 100,0.1);
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     top: 0;
+    border-radius: 8px;
     position: relative;
+}
+
+.service-about h4 {
+    color: white;
+    font-weight: bold;
 }
 
 @media (max-width: 761px) {
@@ -1227,8 +1247,10 @@ body:after {
 }
 
 .footer {
-    background: #fef8f5;
+    background: #4d4d90;
+    color: white;
     font-size: .9rem;
+    box-shadow: rgba(80, 116, 244, 0.2) 0px -5px 20px 0px;
 }
 
 .footer .footer-title {
@@ -1251,4 +1273,35 @@ body:after {
 .rounded-img > img {
     width: 64px;
     border-radius: 50%;
+}
+
+.font-weight-solid {
+    font-weight: 500;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+#clients-section {
+    background: rgb(249, 215, 76);
+    box-shadow: rgba(249, 215, 76, 0.8) 0px -5px 20px 0px;
+}
+
+#portfolio-section {
+    /*background: rgb(108, 108, 229);*/
+    background: white;
+    box-shadow: rgba(108, 108, 229, 0.11) 0px -5px 10px 0px;
+}
+
+#home-section {
+    background: #fdedda;
+    box-shadow: rgba(229, 166, 108, 0.5) 0px 5px 20px 0px;
+}
+
+.site {
+    /*padding-bottom: 5px;*/
+    /*border-bottom: 1px dotted #CCC;*/
+    /*background: white;*/
+    /*box-shadow: rgba(108, 108, 229, 0.5) 0px 5px 20px 0px;*/
 }
