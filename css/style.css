@@ -1247,7 +1247,9 @@ body:after {
 }
 
 .footer {
-    background: #4d4d90;
+    background: linear-gradient(
+            225deg
+            , #6969ea, #3838b6);
     color: white;
     font-size: .9rem;
     box-shadow: rgba(80, 116, 244, 0.2) 0px -5px 20px 0px;
