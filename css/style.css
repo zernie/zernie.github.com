@@ -918,7 +918,7 @@ body:after {
 
 .service {
     padding: 30px;
-    background: rgba(15, 108, 255, 0.5);
+    background: linear-gradient(90deg, rgb(112 110 255 / 55%),rgb(47 128 255 / 50%));
     -webkit-box-shadow: 0 5px 5px 0px rgba(0,0,100,0.15);
     box-shadow: 0 5px 5px 0px rgba(0,0, 100,0.1);
     -webkit-transition: .3s all ease-in-out;
@@ -1302,8 +1302,6 @@ body:after {
 }
 
 .site {
-    /*padding-bottom: 5px;*/
-    /*border-bottom: 1px dotted #CCC;*/
-    /*background: white;*/
-    /*box-shadow: rgba(108, 108, 229, 0.5) 0px 5px 20px 0px;*/
+    /*padding: 10px 20px;*/
+    /*box-shadow: rgb(121 153 225 / 60%) 0px 6px 20px 0px;*/
 }
