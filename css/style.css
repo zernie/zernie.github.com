@@ -918,12 +918,14 @@ body:after {
 
 .service {
     padding: 30px;
-    background: linear-gradient(90deg, rgb(112 110 255 / 55%),rgb(47 128 255 / 50%));
+    background: #8ddb97;
+    /*background: linear-gradient(90deg, rgb(112 110 255 / 55%),rgb(47 128 255 / 50%));*/
+    /*background: linear-gradient(90deg, rgb(112 110 255 / 55%),rgb(47 128 255 / 50%));*/
     -webkit-box-shadow: 0 5px 5px 0px rgba(0,0,100,0.15);
     box-shadow: 0 5px 5px 0px rgba(0,0, 100,0.1);
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
+    -webkit-transition: .3s background ease-in-out;
+    -o-transition: .3s background ease-in-out;
+    transition: .3s background ease-in-out;
     top: 0;
     border-radius: 8px;
     position: relative;
