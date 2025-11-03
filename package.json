@@ -28,6 +28,7 @@
     "@feature-sliced/eslint-config": "^0.1.1",
     "@feature-sliced/steiger-plugin": "^0.5.7",
     "@tailwindcss/postcss": "^4",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

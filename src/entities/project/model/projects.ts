@@ -9,24 +9,19 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Archive",
-    description: "Marketing automation for social and community teams. Scaled to an $80M valuation in year one.",
+    description:
+      "Marketing automation for social and community teams. Scaled to an $80M valuation in year one.",
     href: "https://archive.com/",
     logo: "/images/sites/archive.svg",
     logoWidth: "w-40",
   },
   {
     title: "Bonfire",
-    description: "Websites for creators powered by their social tokens and NFTs.",
+    description:
+      "Websites for creators powered by their social tokens and NFTs.",
     href: "https://getbonfire.xyz/",
     logo: "/images/sites/bonfire.webp",
     logoWidth: "w-32",
-  },
-  {
-    title: "Rabota08",
-    description: "Recruitment platform connecting employers with verified talent.",
-    href: "https://rabota08.ru",
-    logo: "/images/sites/rabota08.webp",
-    logoWidth: "w-44",
   },
   {
     title: "Busbud",
@@ -44,7 +39,8 @@ export const projects: Project[] = [
   },
   {
     title: "Jury.Online",
-    description: "Escrow platform enabling safe investments into crypto startups.",
+    description:
+      "Escrow platform enabling safe investments into crypto startups.",
     href: "https://www.linkedin.com/company/juryonline",
     logo: "/images/sites/jury.webp",
     logoWidth: "w-36",
@@ -62,12 +58,5 @@ export const projects: Project[] = [
     href: "https://leadmob.io/",
     logo: "/images/sites/leadmob.webp",
     logoWidth: "w-40",
-  },
-  {
-    title: "Spika",
-    description: "Concert agency building cross-border live experiences.",
-    href: "https://spika.org/",
-    logo: "/images/sites/spika.webp",
-    logoWidth: "w-36",
   },
 ];

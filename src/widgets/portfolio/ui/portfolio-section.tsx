@@ -9,11 +9,19 @@ export function PortfolioSection() {
   return (
     <Section id="portfolio">
       <div className="container">
-        <SectionHeading eyebrow="Portfolio" title="Selected product partnerships" />
+        <SectionHeading
+          eyebrow="Portfolio"
+          title="Selected product partnerships"
+        />
         <div className="grid gap-8 lg:grid-cols-3">
           {projects.map((project) => (
-            <Card key={project.title} className="flex h-full flex-col items-center gap-6 p-10 text-center">
-              <p className="text-base text-muted-foreground">{project.description}</p>
+            <Card
+              key={project.title}
+              className="flex h-full flex-col items-center gap-6 p-10 text-center"
+            >
+              <p className="text-muted-foreground text-base">
+                {project.description}
+              </p>
               <Link
                 href={project.href}
                 target="_blank"
@@ -27,7 +35,7 @@ export function PortfolioSection() {
                   height={110}
                   className={cn("object-contain", project.logoWidth ?? "w-40")}
                 />
-                <span className="mt-6 text-sm font-semibold text-accent group-hover:underline">
+                <span className="text-accent mt-6 text-sm font-semibold group-hover:underline">
                   Visit project
                 </span>
               </Link>

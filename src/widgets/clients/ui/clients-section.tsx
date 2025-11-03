@@ -9,7 +9,10 @@ export function ClientsSection() {
   return (
     <Section id="clients" className="bg-card/40">
       <div className="container">
-        <SectionHeading eyebrow="Clients" title="Trusted by venture-backed teams" />
+        <SectionHeading
+          eyebrow="Clients"
+          title="Trusted by venture-backed teams"
+        />
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {clients.map((client) => (
             <Link
@@ -17,7 +20,7 @@ export function ClientsSection() {
               href={client.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex h-28 items-center justify-center rounded-3xl border border-dashed border-border bg-card/80 px-6 transition-colors hover:border-accent"
+              className="group border-border bg-card/80 hover:border-accent flex h-28 items-center justify-center rounded-3xl border border-dashed px-6 transition-colors"
             >
               <Image
                 src={client.logo}

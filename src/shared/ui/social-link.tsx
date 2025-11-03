@@ -10,7 +10,12 @@ interface SocialLinkProps {
   className?: string;
 }
 
-export function SocialLink({ href, label, icon: IconComponent, className }: SocialLinkProps) {
+export function SocialLink({
+  href,
+  label,
+  icon: IconComponent,
+  className,
+}: SocialLinkProps) {
   return (
     <Link
       href={href}
@@ -18,7 +23,7 @@ export function SocialLink({ href, label, icon: IconComponent, className }: Soci
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-muted",
+        "border-border text-foreground hover:bg-muted inline-flex h-11 w-11 items-center justify-center rounded-full border transition-colors",
         className,
       )}
     >

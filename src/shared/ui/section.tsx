@@ -6,7 +6,11 @@ interface SectionProps extends HTMLAttributes<HTMLElement> {
   as?: ElementType;
 }
 
-export function Section({ className, as: Component = "section", ...props }: SectionProps) {
+export function Section({
+  className,
+  as: Component = "section",
+  ...props
+}: SectionProps) {
   return (
     <Component
       className={cn("scroll-mt-24 py-24 sm:py-32", className)}

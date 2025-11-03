@@ -9,21 +9,23 @@ export function HeroSection() {
   return (
     <Section
       id="home"
-      className="relative overflow-hidden pb-16 pt-28 sm:pt-36"
+      className="relative overflow-hidden pt-28 pb-16 sm:pt-36"
     >
-      <div className="container relative z-10 flex flex-col gap-12 lg:flex-row lg:items-center">
+      <div className="relative z-10 container flex flex-col gap-12 lg:flex-row lg:items-center">
         <div className="max-w-2xl space-y-8">
-          <span className="inline-flex items-center rounded-full bg-muted px-4 py-1 text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+          <span className="bg-muted text-muted-foreground inline-flex items-center rounded-full px-4 py-1 text-sm font-semibold tracking-[0.3em] uppercase">
             {profile.headline}
           </span>
-          <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+          <h1 className="text-foreground text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             Hey, I&apos;m {profile.name}
           </h1>
-          <div className="space-y-6 text-lg text-muted-foreground">
+          <div className="text-muted-foreground space-y-6 text-lg">
             {profile.bio.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
-            <p className="font-semibold text-foreground">{profile.availability}</p>
+            <p className="text-foreground font-semibold">
+              {profile.availability}
+            </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <Button asChild size="lg">
@@ -37,29 +39,29 @@ export function HeroSection() {
           </div>
         </div>
         <div className="mx-auto w-full max-w-sm sm:max-w-md lg:ml-auto">
-          <div className="relative isolate overflow-hidden rounded-[2.5rem] border border-border/60 bg-card/80 p-8 shadow-soft backdrop-blur">
-            <div className="absolute inset-0 -z-10 bg-gradient-to-br from-accent/10 via-transparent to-accent/20" />
+          <div className="border-border/60 bg-card/80 shadow-soft relative isolate overflow-hidden rounded-[2.5rem] border p-8 backdrop-blur">
+            <div className="from-accent/10 to-accent/20 absolute inset-0 -z-10 bg-gradient-to-br via-transparent" />
             <Image
               src="/images/face.png"
               alt="Portrait of Ernie Bold"
               width={560}
               height={640}
-              className="mx-auto rounded-[1.75rem] border border-border/50 object-cover shadow-soft"
+              className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover"
             />
-            <dl className="mt-8 grid grid-cols-2 gap-6 text-sm text-muted-foreground">
+            <dl className="text-muted-foreground mt-8 grid grid-cols-2 gap-6 text-sm">
               <div>
-                <dt className="font-semibold text-foreground">Experience</dt>
+                <dt className="text-foreground font-semibold">Experience</dt>
                 <dd>{profile.experience}+ years</dd>
               </div>
               <div>
-                <dt className="font-semibold text-foreground">Location</dt>
+                <dt className="text-foreground font-semibold">Location</dt>
                 <dd>{profile.location}</dd>
               </div>
             </dl>
           </div>
         </div>
       </div>
-      <div className="absolute inset-x-0 top-0 -z-10 h-[32rem] bg-gradient-to-b from-accent/20 via-transparent" />
+      <div className="from-accent/20 absolute inset-x-0 top-0 -z-10 h-[32rem] bg-gradient-to-b via-transparent" />
     </Section>
   );
 }
