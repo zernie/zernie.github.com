@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     title: "Buzz.im",
     description: "Telegram advertising marketplace for creators and brands.",
-    href: "https://buzz.im/",
+    href: "https://atwinta.com/material/projects/buzz",
     logo: "/images/sites/buzzim.webp",
     logoWidth: "w-36",
   },
