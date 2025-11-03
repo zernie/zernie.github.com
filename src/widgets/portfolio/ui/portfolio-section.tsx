@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import { projects } from "@/entities/project";
 import { cn } from "@/shared/lib";
-import { Card, Section, SectionHeading } from "@/shared/ui";
+import { Section, SectionHeading } from "@/shared/ui";
+import { Card } from "@/shared/ui/shadcn";
 
 export function PortfolioSection() {
   return (

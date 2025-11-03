@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import { profile } from "@/entities/profile";
 import { socialLinks } from "@/entities/social";
-import { Button, Section, SocialLink } from "@/shared/ui";
+import { Section, SocialLink } from "@/shared/ui";
+import { Button } from "@/shared/ui/shadcn";
 
 export function HeroSection() {
   return (

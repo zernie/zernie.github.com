@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { siteConfig } from "@/shared/config";
-import { Button } from "@/shared/ui";
+import { Button } from "@/shared/ui/shadcn";
 
 const links = [
   { href: "#home", label: "Home" },
