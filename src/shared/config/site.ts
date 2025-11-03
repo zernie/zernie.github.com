@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Ernie",
-  title: "Ernie — Senior Full-Stack Engineer",
+  title: "Ernie — AI-Native Frontend Engineer & Technical Leader",
   description:
-    "Senior full-stack engineer with 9 years of experience bootstrapping ventures to tens of millions in revenue.",
+    "AI-native frontend engineer with 9 years leading product teams and scaling ventures to tens of millions in revenue using cutting-edge AI development tools.",
   keywords: [
     "Erdni Zergetaev",
     "Programming",

@@ -5,12 +5,12 @@ export interface SocialLink {
 
 export const profile = {
   name: "Ernie",
-  headline: "Senior Full-Stack Engineer",
+  headline: "AI-Native Frontend Engineer & Technical Leader",
   location: "Remote",
   experience: 9,
   bio: [
-    "I'm a senior full-stack engineer with 9 years of experience helping venture-backed startups scale from zero to tens of millions in annual revenue.",
-    "I focus on building resilient product foundations, leading high-leverage product squads, and shipping polished user experiences end-to-end.",
+    "AI-native frontend engineer with 9 years scaling startups to tens of millions in revenue. Power user of Claude Code, OpenAI Codex, GitHub Spec Kit, and OpenAI APIs-helping teams adopt AI development workflows.",
+    "I lead engineering teams and ship polished user experiences through hands-on technical leadership.",
   ],
   availability: "Open for long-term remote engagements and visa sponsorships.",
 };

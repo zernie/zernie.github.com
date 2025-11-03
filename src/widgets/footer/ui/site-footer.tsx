@@ -7,7 +7,7 @@ export function SiteFooter() {
     <Section as="footer" className="pt-12 pb-12">
       <div className="text-muted-foreground container text-center text-sm">
         <p>
-          © {year} {siteConfig.name}. Built with Next.js 16, Tailwind CSS, and
+          © {year} {siteConfig.name}. Built with Next.js, Tailwind CSS, and
           Feature-Sliced Design.
         </p>
       </div>
