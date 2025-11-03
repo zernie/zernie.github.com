@@ -16,8 +16,8 @@ export function SkillsSection() {
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
-            <Card key={skill.title} className="flex items-center gap-4 p-6">
-              <div className="bg-muted relative flex h-12 w-12 items-center justify-center rounded-2xl">
+            <Card key={skill.title} className="flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+              <div className="bg-muted relative flex h-12 w-12 items-center justify-center rounded-2xl transition-colors duration-300">
                 <Image
                   src={skill.icon}
                   alt={skill.title}
