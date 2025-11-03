@@ -30,7 +30,7 @@ export function ClientsSection() {
                 height={80}
                 className={cn(
                   client.width,
-                  "object-contain opacity-80 transition-opacity group-hover:opacity-100",
+                  "h-auto object-scale-down opacity-80 transition-opacity group-hover:opacity-100",
                 )}
               />
             </Link>

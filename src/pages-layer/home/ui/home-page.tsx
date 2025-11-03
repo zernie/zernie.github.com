@@ -1,4 +1,3 @@
-import { ClientsSection } from "@/widgets/clients";
 import { HeroSection } from "@/widgets/hero";
 import { PortfolioSection } from "@/widgets/portfolio";
 import { SkillsSection } from "@/widgets/skills";
@@ -9,7 +8,6 @@ export function HomePage() {
       <HeroSection />
       <SkillsSection />
       <PortfolioSection />
-      <ClientsSection />
     </>
   );
 }

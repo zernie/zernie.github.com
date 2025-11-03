@@ -10,13 +10,13 @@ export const clients: Client[] = [
     name: "A.Team",
     href: "https://a.team/",
     logo: "/images/clients/ateam.svg",
-    width: "w-28",
+    width: "w-40",
   },
   {
     name: "Krypton Capital",
     href: "https://krypton.capital/",
     logo: "/images/clients/krypton.webp",
-    width: "w-32",
+    width: "w-40",
   },
   {
     name: "Vayable",
