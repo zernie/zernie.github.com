@@ -13,7 +13,7 @@ export function Section({
 }: SectionProps) {
   return (
     <Component
-      className={cn("scroll-mt-24 py-24 sm:py-32", className)}
+      className={cn("scroll-mt-24 py-12 sm:py-16", className)}
       {...props}
     />
   );

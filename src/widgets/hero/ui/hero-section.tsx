@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <Section
       id="home"
-      className="relative overflow-hidden pt-28 pb-2 sm:pt-36"
+      className="relative overflow-hidden pt-28 pb-0 sm:pt-36"
     >
       <div className="relative z-10 container flex flex-col gap-12 lg:flex-row lg:items-center">
         <div className="max-w-2xl space-y-8">

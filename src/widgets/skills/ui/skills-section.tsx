@@ -7,12 +7,12 @@ import { Card } from "@/shared/ui/shadcn";
 
 export function SkillsSection() {
   return (
-    <Section id="skills" className="bg-card/40 py-2">
+    <Section id="skills" className="bg-card/40 py-0">
       <div className="container">
         <SectionHeading
           eyebrow="Skills"
           title="Deep experience across the full stack"
-          className="mb-2"
+          className="mb-8"
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (

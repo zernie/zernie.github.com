@@ -14,6 +14,7 @@ export const siteConfig = {
     "TypeScript",
     "Startups",
     "AI",
+    "OpenAI",
     "Blockchain",
     "Ethereum",
     "Web3",
