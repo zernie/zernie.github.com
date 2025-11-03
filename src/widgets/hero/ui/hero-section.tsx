@@ -1,10 +1,68 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import { profile } from "@/entities/profile";
 import { socialLinks } from "@/entities/social";
 import { Section, SocialLink } from "@/shared/ui";
 import { Button } from "@/shared/ui/shadcn";
+
+const bioLinks = {
+  "Claude Code": "https://claude.ai/claude-code",
+  "OpenAI Codex": "https://openai.com/index/openai-codex/",
+  "GitHub Spec Kit": "https://github.com/github/spec-kit",
+  "OpenAI APIs": "https://platform.openai.com/docs/api-reference",
+} as const;
+
+function BioText({ children }: { children: string }) {
+  const parts: (string | ReactNode)[] = [];
+  let remainingText = children;
+  let key = 0;
+
+  while (remainingText.length > 0) {
+    let earliestMatch: { text: string; index: number; url: string } | null =
+      null;
+
+    // Find the earliest occurrence of any linkable term
+    for (const [text, url] of Object.entries(bioLinks)) {
+      const index = remainingText.indexOf(text);
+      if (index !== -1 && (!earliestMatch || index < earliestMatch.index)) {
+        earliestMatch = { text, index, url };
+      }
+    }
+
+    if (earliestMatch) {
+      // Add text before the match
+      if (earliestMatch.index > 0) {
+        parts.push(remainingText.slice(0, earliestMatch.index));
+      }
+
+      // Add the link
+      parts.push(
+        <a
+          key={key++}
+          href={earliestMatch.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground underline decoration-muted-foreground/40 decoration-1 underline-offset-2 transition-colors hover:decoration-foreground/60"
+        >
+          {earliestMatch.text}
+        </a>
+      );
+
+      // Continue with remaining text
+      remainingText = remainingText.slice(
+        earliestMatch.index + earliestMatch.text.length
+      );
+    } else {
+      // No more matches, add remaining text
+      parts.push(remainingText);
+      break;
+    }
+  }
+
+  return <>{parts}</>;
+}
 
 export function HeroSection() {
   return (
@@ -22,7 +80,9 @@ export function HeroSection() {
           </h1>
           <div className="text-muted-foreground space-y-6 text-lg">
             {profile.bio.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+              <p key={paragraph}>
+                <BioText>{paragraph}</BioText>
+              </p>
             ))}
             <p className="text-foreground font-semibold">
               {profile.availability}
