@@ -19,7 +19,7 @@ export function PortfolioSection() {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="flex h-full flex-col items-center gap-6 p-10 text-center"
+              className="flex h-full flex-col items-center gap-6 p-10 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <p className="text-muted-foreground text-base">
                 {project.description}
@@ -35,7 +35,7 @@ export function PortfolioSection() {
                   alt={project.title}
                   width={220}
                   height={110}
-                  className={cn("object-contain", project.logoWidth ?? "w-40")}
+                  className={cn("object-contain transition-transform duration-300 group-hover:scale-105", project.logoWidth ?? "w-40")}
                 />
                 <span className="text-accent mt-6 text-sm font-semibold group-hover:underline">
                   Visit project
