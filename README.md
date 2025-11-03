@@ -1,4 +1,4 @@
-# Ernie Bold — Portfolio
+# Ernie — Portfolio
 
 Modernized portfolio site built with Next.js 16, Tailwind CSS, and the Feature-Sliced Design (FSD) architecture. The UI is composed with shadcn-inspired primitives and uses rem-based spacing for consistent scaling across breakpoints.
 

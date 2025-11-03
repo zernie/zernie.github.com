@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 
 concurrency:
@@ -34,8 +34,8 @@ jobs:
       - name: Build application
         run: npm run build
 
-      - name: Export static site
-        run: npm run export
+      - name: Create .nojekyll file
+        run: touch out/.nojekyll
 
       - name: Include CNAME file
         run: |
