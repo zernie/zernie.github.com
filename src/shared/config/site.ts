@@ -15,6 +15,8 @@ export const siteConfig = {
   links: {
     linkedin: "https://www.linkedin.com/in/zernie/",
     github: "https://github.com/zernie",
+    telegram: "https://t.me/zernie08",
+    email: "mailto:zergetaev@gmail.com",
     resume: "/Resume.pdf",
   },
 };
