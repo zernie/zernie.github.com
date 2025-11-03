@@ -5,11 +5,18 @@ export const siteConfig = {
     "Senior full-stack engineer with 9 years of experience bootstrapping ventures to tens of millions in revenue.",
   keywords: [
     "Erdni Zergetaev",
+    "Programming",
     "Full-Stack Engineer",
     "Ruby on Rails",
     "Next.js",
     "React",
+    "Redux",
     "TypeScript",
+    "Startups",
+    "AI",
+    "Blockchain",
+    "Ethereum",
+    "Web3",
   ],
   links: {
     linkedin: "https://www.linkedin.com/in/zernie/",

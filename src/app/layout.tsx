@@ -1,12 +1,16 @@
 import React from "react";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import { siteConfig } from "@/shared/config";
 import { SiteFooter } from "@/widgets/footer";
 import { SiteHeader } from "@/widgets/navigation";
 
 import "./globals.css";
+
+export const viewport: Viewport = {
+  themeColor: "#746ce6",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zernie.com"),
