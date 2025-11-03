@@ -43,7 +43,7 @@ export function HeroSection() {
           <div className="border-border/60 bg-card/80 shadow-soft relative isolate overflow-hidden rounded-[2.5rem] border p-8 backdrop-blur">
             <div className="from-accent/10 to-accent/20 absolute inset-0 -z-10 bg-gradient-to-br via-transparent" />
             <Image
-              src="/images/face.png"
+              src="/images/face.jpeg"
               alt="Portrait of Ernie"
               width={560}
               height={640}
