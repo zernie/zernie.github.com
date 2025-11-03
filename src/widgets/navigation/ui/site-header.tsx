@@ -6,8 +6,7 @@ import { Button } from "@/shared/ui/shadcn";
 const links = [
   { href: "#home", label: "Home" },
   { href: "#skills", label: "Skills" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#clients", label: "Clients" },
+  { href: "#portfolio", label: "Portfolio" }
 ];
 
 export function SiteHeader() {
