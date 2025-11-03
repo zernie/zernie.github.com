@@ -1,11 +1,12 @@
+import React from "react";
+
 import type { Metadata } from "next";
 
+import { siteConfig } from "@/shared/config";
 import { SiteFooter } from "@/widgets/footer";
 import { SiteHeader } from "@/widgets/navigation";
-import { siteConfig } from "@/shared/config";
 
 import "./globals.css";
-import React from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zernie.github.io"),

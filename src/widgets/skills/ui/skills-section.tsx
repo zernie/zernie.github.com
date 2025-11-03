@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { DownloadCvButton } from "@/features/download-cv";
 import { skills } from "@/entities/skill";
+import { DownloadCvButton } from "@/features/download-cv";
 import { Card, Section, SectionHeading } from "@/shared/ui";
 
 export function SkillsSection() {
