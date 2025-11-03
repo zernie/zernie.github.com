@@ -11,7 +11,7 @@ export function DownloadCvButton() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Download CV
+        See Resume (PDF)
       </Link>
     </Button>
   );
