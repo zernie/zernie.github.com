@@ -7,7 +7,7 @@ import { Card } from "@/shared/ui/shadcn";
 
 export function SkillsSection() {
   return (
-    <Section id="skills" className="bg-card/40">
+    <Section id="skills" className="bg-card/40 pt-12 sm:pt-16">
       <div className="container">
         <SectionHeading
           eyebrow="Skills"
