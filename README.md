@@ -31,6 +31,13 @@ npm run build      # Production build (static export)
 
 GitHub Actions run linting, type checks, Steiger, and production builds on every pull request and push to `main`.
 
+## Deployment
+
+Pushes to `main` automatically build and deploy the static export to GitHub Pages. The workflow runs `npm run build` followed by
+`npm run export`, bundles the generated `out/` directory (including the `CNAME` for the custom domain), and publishes it through
+`actions/deploy-pages`. Once GitHub Pages is enabled in the repository settings and pointed at the `github-pages` environment, the
+site is available globally with automatic HTTPS.
+
 ## Project Structure (FSD)
 
 ```
