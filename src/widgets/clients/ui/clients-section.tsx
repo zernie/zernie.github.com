@@ -7,11 +7,12 @@ import { Section, SectionHeading } from "@/shared/ui";
 
 export function ClientsSection() {
   return (
-    <Section id="clients" className="bg-card/40 pt-12 sm:pt-16">
+    <Section id="clients" className="bg-card/40 py-12">
       <div className="container">
         <SectionHeading
           eyebrow="Clients"
           title="Trusted by venture-backed teams"
+          className="mb-8"
         />
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {clients.map((client) => (

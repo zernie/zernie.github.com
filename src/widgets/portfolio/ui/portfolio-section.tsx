@@ -8,11 +8,12 @@ import { Card } from "@/shared/ui/shadcn";
 
 export function PortfolioSection() {
   return (
-    <Section id="portfolio" className="pt-12 sm:pt-16">
+    <Section id="portfolio" className="py-12">
       <div className="container">
         <SectionHeading
           eyebrow="Portfolio"
           title="Selected product partnerships"
+          className="mb-8"
         />
         <div className="grid gap-8 lg:grid-cols-3">
           {projects.map((project) => (
