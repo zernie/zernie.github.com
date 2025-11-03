@@ -8,7 +8,7 @@ import { Card } from "@/shared/ui/shadcn";
 
 export function PortfolioSection() {
   return (
-    <Section id="portfolio">
+    <Section id="portfolio" className="pt-12 sm:pt-16">
       <div className="container">
         <SectionHeading
           eyebrow="Portfolio"

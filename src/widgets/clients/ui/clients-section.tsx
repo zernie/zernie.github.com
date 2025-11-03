@@ -7,7 +7,7 @@ import { Section, SectionHeading } from "@/shared/ui";
 
 export function ClientsSection() {
   return (
-    <Section id="clients" className="bg-card/40">
+    <Section id="clients" className="bg-card/40 pt-12 sm:pt-16">
       <div className="container">
         <SectionHeading
           eyebrow="Clients"
