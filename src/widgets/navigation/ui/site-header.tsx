@@ -8,7 +8,6 @@ const links = [
   { href: "#skills", label: "Skills" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#clients", label: "Clients" },
-  { href: "#music", label: "Music" },
 ];
 
 export function SiteHeader() {
