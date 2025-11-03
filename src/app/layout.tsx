@@ -9,19 +9,19 @@ import { SiteHeader } from "@/widgets/navigation";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zernie.github.io"),
+  metadataBase: new URL("https://zernie.com"),
   title: siteConfig.title,
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
-    url: "https://zernie.github.io",
+    url: "https://zernie.com",
     siteName: siteConfig.name,
     type: "website",
   },
   alternates: {
-    canonical: "https://zernie.github.io",
+    canonical: "https://zernie.com",
   },
 };
 
