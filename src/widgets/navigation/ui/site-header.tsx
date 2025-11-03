@@ -13,7 +13,7 @@ export function SiteHeader() {
   return (
     <header className="border-border/60 bg-background/90 sticky top-0 z-50 border-b backdrop-blur">
       <div className="container flex h-20 items-center justify-between gap-6">
-        <Link href="#home" className="text-lg font-semibold tracking-tight transition-colors hover:text-accent">
+        <Link href="#home" className="text-lg font-semibold tracking-tight transition-all duration-200 hover:opacity-60">
           {siteConfig.name}
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
@@ -21,7 +21,7 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-accent transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all hover:after:w-full"
+              className="transition-all duration-200 hover:opacity-60"
             >
               {link.label}
             </Link>
@@ -33,7 +33,7 @@ export function SiteHeader() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-accent transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all hover:after:w-full"
+                className="transition-all duration-200 hover:opacity-60"
               >
                 {link.label}
               </Link>
