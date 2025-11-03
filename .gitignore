@@ -80,3 +80,5 @@ fabric.properties
 node_modules
 
 .next
+
+tsconfig.tsbuildinfo
