@@ -1,10 +1,9 @@
 export const siteConfig = {
-  name: "Ernie Bold",
+  name: "Ernie",
   title: "Ernie Bold — Senior Full-Stack Engineer",
   description:
     "Senior full-stack engineer with 9 years of experience bootstrapping ventures to tens of millions in revenue.",
   keywords: [
-    "Ernie Bold",
     "Erdni Zergetaev",
     "Full-Stack Engineer",
     "Ruby on Rails",

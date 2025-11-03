@@ -44,7 +44,7 @@ export function HeroSection() {
             <div className="from-accent/10 to-accent/20 absolute inset-0 -z-10 bg-gradient-to-br via-transparent" />
             <Image
               src="/images/face.png"
-              alt="Portrait of Ernie Bold"
+              alt="Portrait of Ernie"
               width={560}
               height={640}
               className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover"
