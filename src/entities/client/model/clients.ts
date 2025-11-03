@@ -30,10 +30,4 @@ export const clients: Client[] = [
     logo: "/images/clients/busbud.webp",
     width: "w-36",
   },
-  {
-    name: "Lark IT",
-    href: "http://larkit.ru/",
-    logo: "/images/clients/larkit-white.webp",
-    width: "w-32",
-  },
 ];

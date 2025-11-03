@@ -14,14 +14,14 @@ export function ClientsSection() {
           title="Trusted by venture-backed teams"
           className="mb-8"
         />
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {clients.map((client) => (
             <Link
               key={client.name}
               href={client.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group border-border bg-card/80 hover:border-accent flex h-28 items-center justify-center rounded-3xl border border-dashed px-6 transition-colors"
+              className="group border-border bg-muted/30 hover:border-accent flex h-28 items-center justify-center rounded-3xl border border-dashed px-6 transition-colors"
             >
               <Image
                 src={client.logo}

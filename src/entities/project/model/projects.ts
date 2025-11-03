@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: "Bonfire",
     description:
       "Websites for creators powered by their social tokens and NFTs.",
-    href: "https://getbonfire.xyz/",
+    href: "https://bonfire.mirror.xyz/",
     logo: "/images/sites/bonfire.webp",
     logoWidth: "w-32",
   },
