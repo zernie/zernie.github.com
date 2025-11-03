@@ -48,7 +48,7 @@ export const projects: Project[] = [
   {
     title: "Vayable",
     description: "Marketplace for curated travel and local experiences.",
-    href: "https://goodbye.vayable.com/",
+    href: "https://arival.travel/article/vayable-shutters-operations/",
     logo: "/images/sites/vayable.webp",
     logoWidth: "w-36",
   },
