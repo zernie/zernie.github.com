@@ -5,6 +5,7 @@ import { SiteHeader } from "@/widgets/navigation";
 import { siteConfig } from "@/shared/config";
 
 import "./globals.css";
+import React from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zernie.github.io"),
