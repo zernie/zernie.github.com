@@ -18,17 +18,12 @@ export function VideosSection() {
             >
               <div className="relative w-full aspect-video">
                 <iframe
-                  src={`https://www.youtube.com/embed/${video.youtubeId}?rel=0&controls=1`}
+                  src={`https://www.youtube.com/embed/${video.youtubeId}?rel=0&color=white&iv_load_policy=3`}
                   title={video.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="absolute inset-0 h-full w-full rounded-3xl"
                 />
-              </div>
-              <div className="mt-4">
-                <h3 className="text-foreground text-lg font-semibold">
-                  {video.title}
-                </h3>
               </div>
             </div>
           ))}
