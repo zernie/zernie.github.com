@@ -16,11 +16,9 @@ export function VideosSection() {
               key={video.youtubeId}
               className="group relative overflow-hidden rounded-3xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
-              <div
-                className={`relative w-full ${video.isShort ? "aspect-[9/16] max-h-[600px] mx-auto" : "aspect-video"}`}
-              >
+              <div className="relative w-full aspect-video">
                 <iframe
-                  src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                  src={`https://www.youtube.com/embed/${video.youtubeId}?rel=0&controls=1`}
                   title={video.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

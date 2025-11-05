@@ -1,7 +1,6 @@
 export interface Video {
   title: string;
   youtubeId: string;
-  isShort?: boolean; // YouTube Shorts have different aspect ratio
 }
 
 export const videos: Video[] = [
@@ -10,8 +9,7 @@ export const videos: Video[] = [
     youtubeId: "q2iBxRGSH3E",
   },
   {
-    title: "Understanding the useEffect Hook",
+    title: "Pain and Suffering Builds Character",
     youtubeId: "LCZt2RnL4lY",
-    isShort: true,
   },
 ];
