@@ -14,7 +14,7 @@ export function PrinciplesSection() {
     return acc;
   }, {} as Record<PrincipleCategory, typeof principles>);
 
-  const categories: PrincipleCategory[] = ["Development", "Architecture", "Tools & AI", "Articles"];
+  const categories: PrincipleCategory[] = ["Development", "Architecture", "Favorite Articles"];
 
   return (
     <Section id="principles" className="bg-muted/30">

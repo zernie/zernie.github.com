@@ -8,9 +8,10 @@ import {
   Lightbulb,
   Wrench,
   FileText,
+  Zap,
 } from "lucide-react";
 
-export type PrincipleCategory = "Development" | "Architecture" | "Tools & AI" | "Articles";
+export type PrincipleCategory = "Development" | "Architecture" | "Favorite Articles";
 
 export interface Principle {
   title: string;
@@ -49,33 +50,39 @@ export const principles: Principle[] = [
     icon: Blocks,
   },
 
-  // Tools & AI
   {
     title: "AI-Enhanced Development",
     description: "Extensively using Claude Code, Codex, and other AI tools to accelerate development and improve code quality.",
-    category: "Tools & AI",
+    category: "Development",
     icon: Lightbulb,
   },
   {
     title: "Developer Experience First",
     description: "Prioritizing great tooling, powerful linting setups, and smooth workflows that make development a joy.",
-    category: "Tools & AI",
+    category: "Development",
     icon: Wrench,
   },
 
-  // Articles
+  // Favorite Articles
   {
     title: "Parse, Don't Validate",
     description: "A type-driven approach to data validation that makes invalid states unrepresentable at compile time.",
-    category: "Articles",
+    category: "Favorite Articles",
     icon: FileText,
     href: "https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/",
   },
   {
     title: "Making Invalid States Unrepresentable",
     description: "Designing data structures and types so that illegal states cannot be constructed in the first place.",
-    category: "Articles",
+    category: "Favorite Articles",
     icon: BookOpen,
-    href: "https://ybogomolov.me/making-invalid-states-unrepresentable",
+    href: "https://geeklaunch.io/blog/make-invalid-states-unrepresentable/",
+  },
+  {
+    title: "You Might Not Need an Effect",
+    description: "Essential React guidance on when to avoid useEffect and use more appropriate patterns for better code.",
+    category: "Favorite Articles",
+    icon: Zap,
+    href: "https://react.dev/learn/you-might-not-need-an-effect",
   },
 ];
