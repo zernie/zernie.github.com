@@ -89,9 +89,9 @@ export function HeroSection() {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <Button asChild size="lg">
-              <Link href="#portfolio">View portfolio</Link>
-            </Button>
+            {/*<Button asChild size="lg">*/}
+            {/*  <Link href="#portfolio">View portfolio</Link>*/}
+            {/*</Button>*/}
             <div className="flex items-center gap-3">
               {socialLinks.map((link) => (
                 <SocialLink key={link.label} {...link} />
