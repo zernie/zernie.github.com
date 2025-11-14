@@ -22,6 +22,7 @@ export interface Principle {
   category: PrincipleCategory;
   icon: LucideIcon;
   href?: string; // Optional link for articles
+  videoUrl?: string; // Optional video URL for modal
 }
 
 export const principles: Principle[] = [
@@ -51,6 +52,7 @@ export const principles: Principle[] = [
     description: "Organizing code by business features with clear layer boundaries for scalable frontend architecture.",
     category: "Architecture",
     icon: Blocks,
+    videoUrl: "/videos/fsd-overview.mp4",
   },
   {
     title: "Domain-Driven Design",

@@ -1,10 +1,27 @@
-import { ExternalLink } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { ExternalLink, PlayCircle } from "lucide-react";
 
 import { principles, type PrincipleCategory } from "@/entities/principle";
+import { VideoModal } from "@/features/video-modal";
 import { Section, SectionHeading } from "@/shared/ui";
 import { Card } from "@/shared/ui/shadcn";
 
 export function PrinciplesSection() {
+  const [videoModal, setVideoModal] = useState<{ isOpen: boolean; videoUrl: string; title: string }>({
+    isOpen: false,
+    videoUrl: "",
+    title: "",
+  });
+
+  const openVideoModal = (videoUrl: string, title: string) => {
+    setVideoModal({ isOpen: true, videoUrl, title });
+  };
+
+  const closeVideoModal = () => {
+    setVideoModal({ isOpen: false, videoUrl: "", title: "" });
+  };
   // Group principles by category
   const principlesByCategory = principles.reduce((acc, principle) => {
     if (!acc[principle.category]) {
@@ -39,6 +56,11 @@ export function PrinciplesSection() {
                     const IconComponent = principle.icon;
                     const CardContent = (
                       <>
+                        {principle.videoUrl && (
+                          <div className="absolute right-3 top-3" title="Watch video">
+                            <PlayCircle className="text-accent h-5 w-5" />
+                          </div>
+                        )}
                         <div className="bg-accent/10 relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-colors duration-300">
                           <IconComponent className="text-accent h-6 w-6" />
                         </div>
@@ -56,6 +78,18 @@ export function PrinciplesSection() {
                       </>
                     );
 
+                    if (principle.videoUrl) {
+                      return (
+                        <Card
+                          key={principle.title}
+                          className="relative flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll"
+                          onClick={() => openVideoModal(principle.videoUrl!, principle.title)}
+                        >
+                          {CardContent}
+                        </Card>
+                      );
+                    }
+
                     if (principle.href) {
                       return (
                         <a
@@ -65,7 +99,7 @@ export function PrinciplesSection() {
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <Card className="flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll">
+                          <Card className="relative flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll">
                             {CardContent}
                           </Card>
                         </a>
@@ -73,7 +107,7 @@ export function PrinciplesSection() {
                     }
 
                     return (
-                      <Card key={principle.title} className="flex items-start gap-4 p-6 transition-all duration-300 h-full fade-in-on-scroll">
+                      <Card key={principle.title} className="relative flex items-start gap-4 p-6 transition-all duration-300 h-full fade-in-on-scroll">
                         {CardContent}
                       </Card>
                     );
@@ -84,6 +118,12 @@ export function PrinciplesSection() {
           })}
         </div>
       </div>
+      <VideoModal
+        isOpen={videoModal.isOpen}
+        onClose={closeVideoModal}
+        videoUrl={videoModal.videoUrl}
+        title={videoModal.title}
+      />
     </Section>
   );
 }
