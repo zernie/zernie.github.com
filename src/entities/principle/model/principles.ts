@@ -9,6 +9,9 @@ import {
   Wrench,
   FileText,
   Zap,
+  Layers,
+  Network,
+  Award,
 } from "lucide-react";
 
 export type PrincipleCategory = "Development" | "Architecture" | "Favorite Articles";
@@ -49,6 +52,12 @@ export const principles: Principle[] = [
     category: "Architecture",
     icon: Blocks,
   },
+  {
+    title: "Domain-Driven Design",
+    description: "Modeling software architecture based on business domain complexity and ubiquitous language.",
+    category: "Architecture",
+    icon: Network,
+  },
 
   {
     title: "AI-Enhanced Development",
@@ -61,6 +70,12 @@ export const principles: Principle[] = [
     description: "Prioritizing great tooling, powerful linting setups, and smooth workflows that make development a joy.",
     category: "Development",
     icon: Wrench,
+  },
+  {
+    title: "SOLID Principles",
+    description: "Following object-oriented design principles (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) for maintainable code.",
+    category: "Development",
+    icon: Layers,
   },
 
   // Favorite Articles
@@ -84,5 +99,12 @@ export const principles: Principle[] = [
     category: "Favorite Articles",
     icon: Zap,
     href: "https://react.dev/learn/you-might-not-need-an-effect",
+  },
+  {
+    title: "Choose Boring Technology",
+    description: "Dan McKinley's influential piece on why you should prefer proven, stable technology over shiny new tools.",
+    category: "Favorite Articles",
+    icon: Award,
+    href: "https://mcfunley.com/choose-boring-technology",
   },
 ];
