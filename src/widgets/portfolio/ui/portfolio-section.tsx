@@ -15,11 +15,11 @@ export function PortfolioSection() {
           title="Selected product partnerships"
           className="mb-8"
         />
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-3">
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="flex h-full flex-col items-center gap-6 p-10 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              className="flex h-full flex-col items-center gap-4 py-4 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <p className="text-muted-foreground text-base">
                 {project.description}

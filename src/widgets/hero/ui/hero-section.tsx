@@ -45,7 +45,7 @@ export function HeroSection() {
               alt="Portrait of Ernie"
               width={560}
               height={640}
-              className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/20 cursor-pointer contrast-95 hover:contrast-110"
+              className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover transition-all duration-300 ease-out hover:-translate-y-6 hover:scale-110 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:brightness-110 cursor-pointer"
             />
             <dl className="text-muted-foreground mt-8 grid grid-cols-2 gap-6 text-sm">
               <div>

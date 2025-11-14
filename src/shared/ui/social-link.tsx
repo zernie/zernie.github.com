@@ -24,7 +24,7 @@ export function SocialLink({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "border-border text-foreground hover:bg-accent/10 hover:border-accent inline-flex h-11 w-11 items-center justify-center rounded-full border transition-colors",
+        "border-border text-foreground hover:bg-accent hover:text-white hover:scale-110 inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all duration-200",
         className,
       )}
     >
