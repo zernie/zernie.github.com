@@ -31,10 +31,10 @@ export function PrinciplesSection() {
 
             return (
               <div key={category}>
-                <h3 className="text-foreground mb-4 text-xl font-bold">
+                <h3 className="text-foreground mb-2 text-xl font-bold">
                   {category}
                 </h3>
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-4 md:grid-cols-2">
                   {categoryPrinciples.map((principle) => {
                     const IconComponent = principle.icon;
                     const CardContent = (
