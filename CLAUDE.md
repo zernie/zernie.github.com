@@ -1,1 +1,2 @@
 - @constitution.md
+- You can make the screenshot of the local website via screenshot-website-fast at http://localhost:3000/#home, assuming it is running already in a separate tab (check processes on 3000)
