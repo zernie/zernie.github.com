@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 import { profile } from "@/entities/profile";
@@ -5,6 +8,8 @@ import { socialLinks } from "@/entities/social";
 import { Section, SocialLink } from "@/shared/ui";
 
 export function HeroSection() {
+  const [showEasterEgg, setShowEasterEgg] = useState(false);
+
   return (
     <Section
       id="home"
@@ -40,13 +45,28 @@ export function HeroSection() {
         <div className="mx-auto w-full max-w-sm sm:max-w-md lg:ml-auto">
           <div className="border-border/60 bg-card/80 shadow-soft relative isolate overflow-hidden rounded-[2.5rem] border p-8 backdrop-blur">
             <div className="from-accent/10 to-accent/20 absolute inset-0 -z-10 bg-gradient-to-br via-transparent" />
-            <Image
-              src="/images/avatar.webp"
-              alt="Portrait of Ernie"
-              width={560}
-              height={640}
-              className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover transition-all duration-300 ease-out hover:-translate-y-6 hover:scale-110 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:brightness-110 cursor-pointer"
-            />
+            {!showEasterEgg ? (
+              <Image
+                src="/images/avatar.webp"
+                alt="Portrait of Ernie"
+                width={560}
+                height={640}
+                onClick={() => setShowEasterEgg(true)}
+                className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover transition-all duration-300 ease-out hover:brightness-110 cursor-pointer"
+              />
+            ) : (
+              <video
+                autoPlay
+                loop
+                muted
+                width={560}
+                height={640}
+                className="border-border/50 shadow-soft mx-auto rounded-[1.75rem] border object-cover w-full h-auto"
+              >
+                <source src="/videos/easter_egg.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
             <dl className="text-muted-foreground mt-8 grid grid-cols-2 gap-6 text-sm">
               <div>
                 <dt className="text-foreground font-semibold">Experience</dt>
