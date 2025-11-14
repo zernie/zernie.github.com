@@ -17,6 +17,8 @@ interface VideoModalProps {
 }
 
 export function VideoModal({ isOpen, onClose, videoUrl, title }: VideoModalProps) {
+  if (!isOpen || !videoUrl) return null;
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl p-0 border-0 bg-transparent shadow-none">
