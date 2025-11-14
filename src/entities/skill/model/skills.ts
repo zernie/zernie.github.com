@@ -22,12 +22,15 @@ export const skills: Skill[] = [
   { title: "Redis", icon: "/images/skills/redis.svg", category: "Backend", isExpert: false },
   { title: "Node.js", icon: "/images/skills/node.svg", category: "Backend", isExpert: false },
   { title: "GraphQL", icon: "/images/skills/graphql.svg", category: "Backend", isExpert: false },
+  { title: "Elasticsearch", icon: "/images/skills/elasticsearch.svg", category: "Backend", isExpert: false },
 
   // AI/ML
   { title: "Vercel AI SDK", icon: "/images/skills/vercel.svg", category: "AI/ML", isExpert: false },
   { title: "GitHub Spec Kit", icon: "/images/skills/github.svg", category: "AI/ML", isExpert: false },
+  { title: "Braintrust", icon: "/images/skills/braintrust.svg", category: "AI/ML", isExpert: false },
 
   // DevOps/Tools
   { title: "Docker", icon: "/images/skills/docker.svg", category: "DevOps/Tools", isExpert: false },
   { title: "GitHub Actions", icon: "/images/skills/github-actions.svg", category: "DevOps/Tools", isExpert: false },
+  { title: "Vercel", icon: "/images/skills/vercel.svg", category: "DevOps/Tools", isExpert: false },
 ];

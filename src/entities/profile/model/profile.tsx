@@ -31,10 +31,8 @@ export const profile = {
       </BioLink>
       , <BioLink href="https://github.com/github/spec-kit">GitHub Spec Kit</BioLink>
       , and{" "}
-      <BioLink href="https://platform.openai.com/docs/api-reference">
-        OpenAI APIs
-      </BioLink>
-      —helping teams adopt AI development workflows.
+        LLMs
+      - helping teams adopt AI development workflows.
     </>,
     <>
       I lead engineering teams and ship polished user experiences through

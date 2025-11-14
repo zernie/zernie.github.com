@@ -49,6 +49,9 @@ This document defines the guiding principles and goals for zernie.com - a portfo
 - Organize by relevance and expertise level
 - Keep current with evolving tech stack
 - Show depth through project examples
+- Maintain complete grid rows (3 items per row on desktop) for visual balance
+- Add/remove skills strategically to avoid incomplete rows that disrupt layout
+- Group related technologies logically within categories
 
 ### Philosophy & Principles
 - Articulate core development values
