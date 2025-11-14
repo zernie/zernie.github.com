@@ -65,7 +65,7 @@ export function PrinciplesSection() {
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <Card className="flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full">
+                          <Card className="flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll">
                             {CardContent}
                           </Card>
                         </a>
@@ -73,7 +73,7 @@ export function PrinciplesSection() {
                     }
 
                     return (
-                      <Card key={principle.title} className="flex items-start gap-4 p-6 transition-all duration-300 h-full">
+                      <Card key={principle.title} className="flex items-start gap-4 p-6 transition-all duration-300 h-full fade-in-on-scroll">
                         {CardContent}
                       </Card>
                     );

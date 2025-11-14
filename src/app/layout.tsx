@@ -55,6 +55,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <div className="scroll-progress" />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

@@ -83,3 +83,60 @@
     transition: color 150ms ease;
   }
 }
+
+/* Scroll-driven Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes parallax-bg {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes scroll-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: hsl(var(--accent));
+  transform-origin: left;
+  z-index: 100;
+  animation: scroll-progress linear;
+  animation-timeline: scroll();
+}
+
+/* Parallax Background */
+.parallax-bg {
+  animation: parallax-bg linear;
+  animation-timeline: scroll();
+}
+
+/* Fade-in on scroll for cards */
+.fade-in-on-scroll {
+  animation: fade-in-up linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}

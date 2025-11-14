@@ -37,7 +37,7 @@ export function SkillsSection() {
                 </h3>
                 <div className="grid grid-cols-2 gap-6 lg:grid-cols-3">
                   {categorySkills.map((skill) => (
-                    <Card key={skill.title} className="relative flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+                    <Card key={skill.title} className="relative flex items-center gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer fade-in-on-scroll">
                       {skill.isExpert && (
                         <div className="absolute right-3 top-3" title="Expert">
                           <svg

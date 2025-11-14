@@ -71,7 +71,9 @@ This document defines the guiding principles and goals for zernie.com - a portfo
 - Optimize for Core Web Vitals
 - Lazy load images and heavy content
 - Minimize JavaScript where possible
-- Progressive enhancement approach
+- Built for modern browsers (Chrome 115+, Firefox 115+, Safari 17+)
+- No legacy browser support - leverages cutting-edge web platform features
+- Use modern CSS features (scroll-driven animations, container queries, :has(), etc.)
 
 ### Accessibility
 - WCAG AA compliance minimum

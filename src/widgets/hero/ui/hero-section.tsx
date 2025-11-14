@@ -60,7 +60,7 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="from-accent/20 absolute inset-x-0 top-0 -z-10 h-[32rem] bg-gradient-to-b via-transparent" />
+      <div className="from-accent/20 absolute inset-x-0 top-0 -z-10 h-[32rem] bg-gradient-to-b via-transparent parallax-bg" />
     </Section>
   );
 }
