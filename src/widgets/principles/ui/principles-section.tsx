@@ -33,6 +33,12 @@ export function PrinciplesSection() {
 
   const categories: PrincipleCategory[] = ["Development", "Architecture", "Favorite Articles"];
 
+  const categoryColors = {
+    "Development": "border-l-blue-500/50",
+    "Architecture": "border-l-purple-500/50",
+    "Favorite Articles": "border-l-emerald-500/50",
+  };
+
   return (
     <Section id="principles" className="bg-muted/30">
       <div className="container">
@@ -45,6 +51,7 @@ export function PrinciplesSection() {
           {categories.map((category) => {
             const categoryPrinciples = principlesByCategory[category];
             if (!categoryPrinciples?.length) return null;
+            const borderColor = categoryColors[category as keyof typeof categoryColors];
 
             return (
               <div key={category}>
@@ -85,7 +92,7 @@ export function PrinciplesSection() {
                       return (
                         <Card
                           key={principle.title}
-                          className="relative flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll"
+                          className={`relative flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll border-l-4 ${borderColor}`}
                           onClick={() => openVideoModal(principle.videoUrl!, principle.title)}
                         >
                           {CardContent}
@@ -102,7 +109,7 @@ export function PrinciplesSection() {
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <Card className="relative flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll">
+                          <Card className={`relative flex items-start gap-4 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer h-full fade-in-on-scroll border-l-4 ${borderColor}`}>
                             {CardContent}
                           </Card>
                         </a>
@@ -110,7 +117,7 @@ export function PrinciplesSection() {
                     }
 
                     return (
-                      <Card key={principle.title} className="relative flex items-start gap-4 p-6 transition-all duration-300 h-full fade-in-on-scroll">
+                      <Card key={principle.title} className={`relative flex items-start gap-4 p-6 transition-all duration-300 h-full fade-in-on-scroll border-l-4 ${borderColor}`}>
                         {CardContent}
                       </Card>
                     );
