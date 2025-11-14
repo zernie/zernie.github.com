@@ -57,8 +57,11 @@ export function PrinciplesSection() {
                     const CardContent = (
                       <>
                         {principle.videoUrl && (
-                          <div className="absolute right-3 top-3" title="Watch video">
-                            <PlayCircle className="text-accent h-5 w-5" />
+                          <div
+                            className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-accent/20 backdrop-blur-sm shadow-lg shadow-accent/30 transition-all duration-300 hover:bg-accent/30 hover:shadow-accent/50 hover:scale-110"
+                            title="Watch video"
+                          >
+                            <PlayCircle className="text-accent h-6 w-6 fill-accent/20" />
                           </div>
                         )}
                         <div className="bg-accent/10 relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-colors duration-300">

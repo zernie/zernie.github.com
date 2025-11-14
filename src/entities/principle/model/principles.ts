@@ -52,7 +52,7 @@ export const principles: Principle[] = [
     description: "Organizing code by business features with clear layer boundaries for scalable frontend architecture.",
     category: "Architecture",
     icon: Blocks,
-    videoUrl: "/videos/fsd-overview.mp4",
+    videoUrl: "/videos/fsd-overview.webm",
   },
   {
     title: "Domain-Driven Design",
